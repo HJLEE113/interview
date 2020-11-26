@@ -58,12 +58,12 @@ class SCE {
 		}
 }
 result = false 
-num1 = 10 
+num1 = 10 //앞에있는 식에서 이미 false값이 나왔기 때문에 num1의 값만 연산이 된다.
 num2 = 0
 
 
 result = true 
-num1 = 20 
+num1 = 20 //앞에있는 식에서 이미 true값이 나왔기 때문에 num1의 값만 연산이 된다.
 num2 = 0
 
 
@@ -142,10 +142,9 @@ class AssignSteResult {
         System.out.println(num3);
     }
 }
+//num3의 값(30)이 num2로, 그 값이 num1으로 넣어짐.
 30
-
 30
-
 30
 
 
@@ -177,19 +176,12 @@ class SCE {
 		}	
 }
 result = false
-
 num1 = 10
-
-num2 = 10
-
-
+num2 = 10 //출력하기 전에 이미 더해주므로 둘다 증가
 
 result = true
-
 num1 = 20
-
-num2 = 20
-
+num2 = 20 //출력하기 전에 이미 더해주므로 둘다 증가
 
 
 13.아래의 출력값을 예측하시오.
@@ -208,7 +200,5 @@ class AddNum {
 		}
 }
 3 + 6 = 9
-
 3 + 6 + 9 = 18
-
 3 + 6 + 9 + 12 = 30
