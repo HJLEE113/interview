@@ -4,7 +4,17 @@ char ch = '가';
 
 System.out.println(ch+'\n');
 
+
+
 '\n'은 하나의 문자, 즉 개행 문자를 나타내는 문자 상수이기 때문이다.
+
+'\n'을 메모리에 올리면 char데이터타입으로 올라간다.
+
+의도대로 나오게 하고싶으면 System.out.println(ch+"\n");
+
+→"\n"은 String데이터타입으로 메모리에 올라간다.
+
+
 
 
 
@@ -13,9 +23,11 @@ System.out.println(ch+'\n');
 변수의 scope는 {중괄호안에 있는 변수의 범위}이다.
 
 
-3.지역변수?
-
+3.지역변수?(local variable)
 {함수안에 있는 변수들}이다.
+
+3-1. 인스턴스변수?(instance variable)
+{   }함수밖에 있는 변수들이다.
 
 
 4.펙토리얼을 구하는 재귀 함수를 만드시오.
@@ -38,6 +50,15 @@ public class Main {
 5.클래스의 구성요소는 무엇인가?
 
 변수와 함수
+
+5-1. 클래스의 의미
+
+1. 클래스명.java (반드시 클래스명이어야 함)
+
+2. 클래스명.class (컴파일 된 파일)
+
+
+
 
 
 6.원의 넓이는 구하는 프로그램을 아래와 같이 작성하시오.
@@ -80,8 +101,19 @@ public class MainCircle {
 
 7.객체란 무엇인가?
 
+.class파일을 메모리에 올린것.
+
 클래스의 인스턴스
 
+Circle circle = new Circle();
+ 
+/*
+Circle → 클래스명 
+circle → 생성하려는 객체 이름
+new → 객체 생성 키워드
+Circle(); → Circle(); 함수
+= → 주소를 가리킴
+*/
 
 8. 아래의 클래스에 대하여, 메모리 그림을 그리시오.
 
@@ -115,6 +147,8 @@ public class Rectangle {
 9.클래스와 객체의 차이는 무엇인가?
 
 클래스는 설계도, 객체는 설계도로 구현한 모든 대상
+
+객체는 .class를 메모리에 올린것.
 
 
 
@@ -154,38 +188,34 @@ package java_rec;
 
 public class StarPrint {
 	
-	public int printTriangle(int num1) {
-		for(int i = 1; i<=num1; i++) {
-			for(int j=1; j<=i; j++){
+	public void printTriangle(**int num**) {
+		for(int i=1; **i<=num;** i++) {
+			for(int j=1; j<=i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}
-		return num1;
+		}	
 	}
 	
-	public int printReverseTriangle(int num2) {
-		for(int i = num2; i>=1; i--) {
-			for(int j=1; j<=i; j++){
+	public void printReverseTriangle(**int num**) {
+		for(int i=1; **i<=num;** i++) {
+			for(int **j=num;** j>=i; j--) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-		return num2;
-	}
+	}	
 }
 package java_rec;
 
-public class StarPrint00 {
+public class StarPrint {
 	public static void main(String[] args) {
 		
-		StarPrint strPrint = new StarPrint();
-	
-		strPrint.printTriangle(3); 
-		System.out.println();
-		strPrint.printReverseTriangle(3);			
-	}
-}
+	StarPrint strPrint = new StarPrint();
+
+	strPrint.printTriangle(3); 
+	System.out.println();
+	strPrint.printReverseTriangle(3); 
 
 
 12.아래의 프로그래밍을 작성하시오.
@@ -228,3 +258,6 @@ public class Gugudan00 {
 
    BankAccount ref1 = new BankAccount();
    BankAccount ref2 = ref1;
+
+
+
