@@ -178,6 +178,49 @@ n
 프로그램 종료 입니다.
 6. 아래의 프로그램을 작성하시오.
 
+
+내답변
+
+package java_hello;
+ 
+import java.util.Scanner;
+ 
+public class World {
+	public static void main(String[] args) {
+		
+		Scanner scanner = null;
+		while(true) {
+		Scanner scanner1 = new Scanner(System.in);
+		int math,science,english;
+		math = 90;
+		science = 100;
+		english = 80;
+		
+		math = scanner1.nextInt();
+		science = scanner1.nextInt();
+		english = scanner1.nextInt();
+		double avg = (math+science+english)/3.0;
+		
+		System.out.println("수학 과학 영어 점수를 입력하시오");
+		
+		System.out.println("수학"+math+" 과학"+science+" 영어"+english+" 평균점수는 "+avg);
+		
+		System.out.println("계속하시겠습니까?");
+			
+		String yesOrno = scanner1.next();
+		if(yesOrno.equals("Y")|| yesOrno.equals("y")) {
+			continue;
+		}else
+			break;
+		}
+			System.out.println("프로그램종료");
+			scanner.close();
+	}
+}
+
+
+
+
  - 화폐 매수 구하기 
  - 반드시 클래스로 작성할것  
 출력 
