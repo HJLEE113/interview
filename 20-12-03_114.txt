@@ -85,14 +85,16 @@ public class Game {
 		int me = sc.nextInt();
 
 		// 컴퓨터는 랜덤
-		int com = (int) (Math.random() * 3)+1;
+		int com = (int) (Math.random() * 3) + 1;
 		if (com == scissors) {
 			System.out.println("컴퓨터 : 1.가위");
-		} if (com == rock) {
+		}
+		if (com == rock) {
 			System.out.println("컴퓨터 : 2.바위");
-		}if (com == paper) {
+		}
+		if (com == paper) {
 			System.out.println("컴퓨터 : 3.보");
-		} 
+		}
 		System.out.print("나 : " + me);
 
 		// 컴퓨터 : 2.바위
@@ -114,15 +116,16 @@ public class Game {
 			System.out.println(".바위\n이겼습니다.");
 
 		}
-		
-		//컴퓨터 : 보
+
+		// 컴퓨터 : 보
 		if (com == paper && me == paper) {
 			System.out.println(".보\n비겼습니다.");
 		} else if (com == paper && me == rock) {
 			System.out.println(".바위\n졌습니다.");
 		} else if (com == paper && me == scissors) {
 			System.out.println(".가위\n이겼습니다.");
-
+		} else {
+			System.out.println(".오류");
 		}
 	}
 }
