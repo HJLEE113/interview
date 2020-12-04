@@ -16,6 +16,33 @@
 
 
 4.랜덤 숫자 맞추기 게임을 짜시오.
+public class Number {
+
+	private static int comnum = (int) (Math.random() * 100) + 1;
+
+	public static void main(String[] agrs) {
+
+		while (true) {
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+			
+			
+			// 컴퓨터는 랜덤으로 숫자지정
+
+			if (comnum == num) {
+				System.out.println("정답입니다.");
+				break;
+			} else if (comnum < num) {
+				System.out.println("down");
+				continue;
+			} else if (comnum > num) {
+				System.out.println("up");
+				continue;
+			}
+		}
+	}
+}
+
 
 5.static 변수의 다른 용어 3가지를 말해 보시오.
 
@@ -33,9 +60,9 @@ static변수=클래스 변수=공유 변수
 
 7.static 변수의 접근 방법은?
 
-클래스 내부에서 직접접근→ 클래스이름 변수이름 = new 클래스이름()
+/*클래스 내부에서 직접접근→ 클래스이름 변수이름 = new 클래스이름()
 인스턴스 생성후 접근→클래스이름.인스턴스이름
-클래스의 이름으로 접근→클래스이름.
+클래스의 이름으로 접근→클래스이름.*/
 
 
 
