@@ -97,3 +97,60 @@ public static void main(String[] args) {
 (2,2)에서 크기가 8x7인 사각형
 s의 면적은 36
 t는 r을 포함합니다
+===========================================
+
+class Rectangle {
+	// x, y, width, height 값을 매개변수로 받아 필드를 초기화하는 생성자
+ 
+	private int x = 0;
+	private int y = 0;
+	private int width = 0;
+	private int heigh = 0;
+ 
+	public Rectangle(int x, int y, int width, int heigh) {		
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.heigh = heigh;
+	}
+ 	
+// 사각형의 좌표와 넓이를 화면에 출력	
+	public void show() { 
+		System.out.println("좌표 (" + this.x + "," + this.y + ") " );
+		System.out.println("넓이 "+ ((this.width) * (this.heigh)));
+	}
+	
+//매개변수로 받은 r이 현 사각형(t) 안에 있으면 true 리턴 
+	 public boolean contains(Rectangle r) {//모르겠어요
+		 
+//		 if((t.x>=r.x)&&(r.y>=r.y)&&
+//			(t.width*t.heigh)>=(r.width*r.heigh))
+				return true;
+	}
+ 	
+// 사각형 넓이 리턴
+	public int square() {		
+		return width*heigh; 
+	} 
+}
+-----------------------------------------
+public class RecMain {
+	public static void main(String[] args) {
+		Rectangle r = new Rectangle(2, 2, 8, 7);
+		Rectangle s = new Rectangle(5, 5, 6, 6);
+		Rectangle t = new Rectangle(1, 1, 10, 10);
+		
+		r.show();
+		
+		System.out.println("s의 면적은 " + s.square());
+		if (t.contains(r))
+			System.out.println("t는 r을 포함합니다.");
+		if (t.contains(s))
+			System.out.println("t는 s를 포함합니다.");
+	}
+//		(2,2)에서 크기가 8x7인 사각형
+//		s의 면적은 36
+//		t는 r을 포함합니다.
+ 
+}
+
