@@ -20,7 +20,7 @@ public class Number {
 
 	private static int comnum = (int) (Math.random() * 100) + 1;
 
-	public static void main(String[] agrs) {
+	public static void main(String[] args) {
 
 		while (true) {
 			Scanner sc = new Scanner(System.in);
@@ -58,11 +58,12 @@ static변수=클래스 변수=공유 변수
 스택 영역(Stack Area) = call stack. : 지역변수,리턴
 
 
-7.static 변수의 접근 방법은?
+7.static 변수의 접근 방법은? 
+**메소드가 클래스소속일때 static이 있어야한다.
 
-/*클래스 내부에서 직접접근→ 클래스이름 변수이름 = new 클래스이름()
-인스턴스 생성후 접근→클래스이름.인스턴스이름
-클래스의 이름으로 접근→클래스이름.*/
+클래스 내부에서 직접접근
+인스턴스 생성후 접근
+클래스의 이름으로 접근
 
 
 
@@ -70,6 +71,7 @@ static변수=클래스 변수=공유 변수
 8.클래스 변수의 활용의 예를 드시오.
 
 9.스태틱 함수에 인스턴스 변수가 올수 없는 이유는? 
+인스턴스가 생성되었다는 것은 클래스메서드(static이 붙은 함수)가 이미 존재한다는 의미이고 클래스메서드에서는 인스턴스가 생성되어있지 않을 수 있어서 허용하지 않는다.
 
 10.아래의 프로그램을 작성 하시오. 
 
