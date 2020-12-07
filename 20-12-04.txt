@@ -101,9 +101,6 @@ public static void main(String[] args) {
 s의 면적은 36
 t는 r을 포함합니다
 ===========================================
-
-package java_1207;
-
 public class Rectangle {
 	// x, y, width, height 값을 매개변수로 받아 필드를 초기화하는 생성자
 
@@ -134,8 +131,8 @@ public class Rectangle {
 //매개변수로 받은 r이 현 사각형(t) 안에 있으면 true 리턴 
 	public boolean contains(Rectangle r) {// 모르겠어요
 
-		if ((this.y+this.heigh <= r.y+r.heigh) && 
-				(this.x+this.width <= r.y+r.width) && 
+		if ((this.y+this.heigh >= r.y+r.heigh) && 
+				(this.x+this.width >= r.y+r.width) && 
 				(this.width * this.heigh) >= (r.width * r.heigh))
 			return true;
 		else
