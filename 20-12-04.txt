@@ -129,7 +129,7 @@ public class Rectangle {
 	}
 
 //매개변수로 받은 r이 현 사각형(t) 안에 있으면 true 리턴 
-	public boolean contains(Rectangle r) {// 모르겠어요
+	public boolean contains(Rectangle r) {
 
 		if ((this.y+this.heigh >= r.y+r.heigh) && 
 				(this.x+this.width >= r.y+r.width) && 
