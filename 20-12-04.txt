@@ -102,39 +102,50 @@ s의 면적은 36
 t는 r을 포함합니다
 ===========================================
 
-class Rectangle {
+package java_1207;
+
+public class Rectangle {
 	// x, y, width, height 값을 매개변수로 받아 필드를 초기화하는 생성자
- 
-	private int x = 0;
-	private int y = 0;
-	private int width = 0;
-	private int heigh = 0;
- 
-	public Rectangle(int x, int y, int width, int heigh) {		
+
+	private int x, y, width, heigh;
+	//Rectangle rectangle;
+	// 선언하자마자 초기화가능 Rectangle rectangle = new Rectangle(); 데이터타입이 Rectangle이고
+	// 4byte메모리 올림.
+
+//	public Rectangle(Rectangle r) { // Rectangle받아서 주소 만든것.
+//		rectangle = r;
+//	}
+
+	public Rectangle(int x, int y, int width, int heigh) {
 		this.x = x;
 		this.y = y;
 		this.width = width;
 		this.heigh = heigh;
 	}
- 	
-// 사각형의 좌표와 넓이를 화면에 출력	
-	public void show() { 
-		System.out.println("좌표 (" + this.x + "," + this.y + ") " );
-		System.out.println("넓이 "+ ((this.width) * (this.heigh)));
-	}
 	
-//매개변수로 받은 r이 현 사각형(t) 안에 있으면 true 리턴 
-	 public boolean contains(Rectangle r) {//모르겠어요
-		 
-//		 if((t.x>=r.x)&&(r.y>=r.y)&&
-//			(t.width*t.heigh)>=(r.width*r.heigh))
-				return true;
+	
+
+// 사각형의 좌표와 넓이를 화면에 출력 =(2,2)에서 크기가 8x7인 사각형
+	public void show() {
+		System.out.println("(" + this.x + "," + this.y + ")에서 크기가 " + 
+	(this.width) + "x" + (this.heigh) + "인 사각형");
 	}
- 	
+
+//매개변수로 받은 r이 현 사각형(t) 안에 있으면 true 리턴 
+	public boolean contains(Rectangle r) {// 모르겠어요
+
+		if ((this.y+this.heigh <= r.y+r.heigh) && 
+				(this.x+this.width <= r.y+r.width) && 
+				(this.width * this.heigh) >= (r.width * r.heigh))
+			return true;
+		else
+			return false;
+	}
+
 // 사각형 넓이 리턴
-	public int square() {		
-		return width*heigh; 
-	} 
+	public int square() {
+		return width * heigh;
+	}
 }
 -----------------------------------------
 public class RecMain {
