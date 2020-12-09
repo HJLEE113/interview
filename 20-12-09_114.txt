@@ -1,4 +1,4 @@
-﻿1.배열의 디폴트 초기화 방법은?
+1.배열의 디폴트 초기화 방법은?
 
 
 
@@ -173,8 +173,42 @@ public class Number {
 
 
 
+public class Array {
+	public static void main(String args[]) {
+		int sixsu[] = new int[6]; // int형 배열 선언
+		
+		// 6개의 숫자 입력
+		System.out.println("6개의 숫자");
+		for (int i = 0; i < sixsu.length; i++) {
+			sixsu[i] = (int) (Math.random() * 100) + 1;
+		}
 
+		// 입력한 값 출력
+		System.out.print("입력된 값은 : ");
+		for (int j = 0; j < 6; j++) {
+			System.out.print(sixsu[j] + " ");
+		}
+		System.out.println();
 
+		// 입력받은 수를 큰 순서대로 넣기
+		for (int i = 0; i < sixsu.length; i++) {
+			for (int j = i + 1; j < sixsu.length; j++) {
+				if (sixsu[i] < sixsu[j]) {
+					int temp = sixsu[i];
+					sixsu[i] = sixsu[j];
+					sixsu[j] = temp;
+				}
+			}
+		}
+
+		// 결과값 출력
+		System.out.print("큰 수부터 출력 : ");
+		for (int i = 0; i < 6; i++) {
+			System.out.print(sixsu[i] + " ");
+		}
+		System.out.println();
+	}
+}
 
 
 
@@ -268,3 +302,4 @@ public class ArayRandom {
 
 14.아래를 메모리 구조로 표현하시오. 
 int[][] arr = new int[3][4]
+
