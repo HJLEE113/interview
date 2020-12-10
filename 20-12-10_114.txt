@@ -40,42 +40,75 @@ if(course[i].equals(name)) {
     int n = score[i];
     ...
 }
-package java_1210;
+===================================
+package java_1210_prac;
 
-import java.util.Scanner;
+class Point {
+	protected int x;
+	protected int y;
+	public String color;
 
-public class Score {
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 
-	private static int i;
-	private static String name;
+	public int getX() {
+		return x;
+	}
 
-	public static void main(String[] args) {
+	public int getY() {
+		return y;
+	}
 
-		String course[] = { "Java", "C++", "HTML5", "컴퓨터구조", "안드로이드" };
-		int score[] = { 95, 88, 76, 62, 55 };
-		// System.out.print("과목 이름 >> ");
-		Scanner sc = new Scanner(System.in);
+	protected void move(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 
-		while (true) {
-			System.out.print("과목 이름 >> ");
-			String name = sc.nextLine();
-			for (int i = course.length - 5; i < course.length; i++) {
-				if (course[i].equals(name)) {
-					int n = score[i];
-					System.out.println(n);
+	public String toString() {
+		System.out.println(color + "색의 (" + this.x + ", " + this.y + ")의 점입니다.");
 
-				} else if (name.equals("그만")) {
-					return;
-				}
-			}
-			if (course[i] != name) {
-				System.out.println("없는 과목입니다.");
+		return "";
+	}
 
-			}
-		}
+}
+
+class ColorPoint extends Point {
+
+	public ColorPoint(int x, int y, String color) {
+		super(x, y);
+		this.color = color;
 
 	}
-}//오류
+
+	public void setXY(int x, int y) {
+		this.x = x;
+		this.y = y;
+
+	}
+
+	public void setColor(String color) {
+
+		this.color = color;
+
+	}
+
+}
+
+public class PointMain {
+	public static void main(String[] args) {
+
+		ColorPoint cp = new ColorPoint(5, 5, "YELLOW");
+		cp.setXY(10, 20);
+		cp.setColor("RED");
+		String str = cp.toString();
+
+	}
+}
+
+
+7
 
 
 
