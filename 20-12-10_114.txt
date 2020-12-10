@@ -112,7 +112,7 @@ package java_1210_prac;
 
 class Point {
 	private int x, y;
-	public String color;
+	public String color;//private change!!
 
 	public Point(int x, int y) {
 		this.x = x;
@@ -132,10 +132,12 @@ class Point {
 		this.y = y;
 	}
 
-	public void setXY(int x, int y) {
+	public void setXY(int x, int y) { --- extends pointㅇㅔ ㄴㅓㅎㄱㅣ
+	//super.move(x,y)---ㅇㅣㅂㅜㅂㅜㄴ
 	}
 
-	public void setColor(String string) {
+	public void setColor(String string) { ---extends pointㅇㅔ ㄴㅓㅎㄱㅣ
+	//this.color = color; ----ㅇㅣㅂㅜㅂㅜㄴ
 	}
 
 	public String toString() {
@@ -147,7 +149,7 @@ class Point {
 }
 
 class ColorPoint extends Point {
-
+//privat String color ---ㅇㅣㅂㅜㅂㅜㄴ
 	public ColorPoint(int x, int y, String color) {
 		super(x, y);
 		this.color = color;
@@ -162,6 +164,7 @@ public class PointMain {
 		cp.setXY(10, 20);
 		cp.setColor("RED");
 		String str = cp.toString();
+		//syso str ㄴㅓㅎㄱㅣ
 		
 	}
 }
@@ -269,10 +272,22 @@ public static void main(String[] args) {
    p.move(100,  200, 300); // x, y, z축으로 이동
    System.out.println(p.toString()+"입니다.");
 }
+
+//zㅁㅏㄴ ㅁㅏㄴㄷㅡㄹㄱㅣ
+
+
+
+
+
+
 (1,2,3) 의 점입니다.
 (1,2,4) 의 점입니다.
 (10,10,3) 의 점입니다.
 (100,200,300) 의 점입니다.
+
+
+
+
 9.배열을 이용하여 간단한 극장 예약 시스템을 작성하여 보자. 
 
 아주 작은 극장이라서 좌석이 10개 밖에 되지 않는다. 
