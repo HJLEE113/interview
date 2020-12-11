@@ -40,6 +40,67 @@ if(course[i].equals(name)) {
     int n = score[i];
     ...
 }
+==================================
+package java_1210_prac;
+ 
+import java.util.Scanner;
+ 
+public class Score {
+ 
+	private static int i;
+	private static String name;
+ 
+	public static void main(String[] args) {
+ 
+		String course[] = { "Java", "C++", "HTML5", "컴퓨터구조", "안드로이드" };
+		int score[] = { 95, 88, 76, 62, 55 };
+		// System.out.print("과목 이름 >> ");
+		Scanner sc = new Scanner(System.in);
+ 
+		while (true) {
+			System.out.print("과목 이름 >> ");
+			String name = sc.nextLine();
+			for (int i = course.length - 5; i < course.length; i++) {
+				if (course[i].equals(name)) {
+					int n = score[i];
+					System.out.println(course[i]+"의 점수는 "+n+"점입니다");
+ 
+				} else if (name.equals("그만")) {
+					return;
+				}
+			}
+			if (!course[i].equals(name) && !course[i].equals("그만")) {
+				System.out.println("없는 과목입니다.");
+				
+			}
+			
+		}
+ 
+	}
+}//오류
+
+
+
+6.다음은 2차원 상의 한 점을 표현하는 Point 클래스이다.
+
+class Point {
+   private int x, y;
+   public Point(int x, int y) { this.x = x; this.y = y; }
+   public int getX() { return x; }
+   public int getY() { return y; }
+   protected void move(int x, int y) { this.x =x; this.y = y; }
+}
+
+
+Point를 상속받아 색을 가진 점을 나타내는 ColorPoint 클래스를 작성하라. 다음 main() 메소드를 포함하고 실행 결과와 같이 출력되게 하라.
+
+public static void main(String[] args) {
+   ColorPoint cp = new ColorPoint(5, 5, "YELLOW");
+   cp.setXY(10, 20);
+   cp.setColor("RED");
+   String str = cp.toString();
+   System.out.println(str+"입니다. ");
+}
 ===================================
 package java_1210_prac;
 
@@ -106,104 +167,6 @@ public class PointMain {
 
 	}
 }
-
-
-7
-
-
-
-
-
-
-
-6.다음은 2차원 상의 한 점을 표현하는 Point 클래스이다.
-
-class Point {
-   private int x, y;
-   public Point(int x, int y) { this.x = x; this.y = y; }
-   public int getX() { return x; }
-   public int getY() { return y; }
-   protected void move(int x, int y) { this.x =x; this.y = y; }
-}
-
-
-Point를 상속받아 색을 가진 점을 나타내는 ColorPoint 클래스를 작성하라. 다음 main() 메소드를 포함하고 실행 결과와 같이 출력되게 하라.
-
-public static void main(String[] args) {
-   ColorPoint cp = new ColorPoint(5, 5, "YELLOW");
-   cp.setXY(10, 20);
-   cp.setColor("RED");
-   String str = cp.toString();
-   System.out.println(str+"입니다. ");
-}
-
-=======================
-RED색의 (10,20)의 점입니다.
-
-
-package java_1210_prac;
-
-class Point {
-	private int x, y;
-	public String color;//private change!!
-
-	public Point(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-
-	public int getX() {
-		return x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
-	protected void move(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-
-	public void setXY(int x, int y) { --- extends pointㅇㅔ ㄴㅓㅎㄱㅣ
-	//super.move(x,y)---ㅇㅣㅂㅜㅂㅜㄴ
-	}
-
-	public void setColor(String string) { ---extends pointㅇㅔ ㄴㅓㅎㄱㅣ
-	//this.color = color; ----ㅇㅣㅂㅜㅂㅜㄴ
-	}
-
-	public String toString() {
-		System.out.println(color + "색의 (" + getX() + ", " + getY() + ")의 점입니다.");
-
-		return "";
-	}
-
-}
-
-class ColorPoint extends Point {
-//privat String color ---ㅇㅣㅂㅜㅂㅜㄴ
-	public ColorPoint(int x, int y, String color) {
-		super(x, y);
-		this.color = color;
-	}
-
-}
-
-public class PointMain {
-	public static void main(String[] args) {
-
-		ColorPoint cp = new ColorPoint(5, 5, "YELLOW");
-		cp.setXY(10, 20);
-		cp.setColor("RED");
-		String str = cp.toString();
-		//syso str ㄴㅓㅎㄱㅣ
-		
-	}
-}
-
-
-
 
 
 
@@ -306,7 +269,7 @@ public static void main(String[] args) {
    System.out.println(p.toString()+"입니다.");
 }
 
-//zㅁㅏㄴ ㅁㅏㄴㄷㅡㄹㄱㅣ
+//z만 
 
 
 
