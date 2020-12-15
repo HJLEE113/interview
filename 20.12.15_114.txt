@@ -1,64 +1,64 @@
-1.Maker ÀÎÅÍÆäÀÌ½º¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
+1.Maker ì¸í„°í˜ì´ìŠ¤ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
 
-ÀÎÅÍÆäÀÌ½º¸¸ ÀÖ°í ¸Ş¼Òµå°¡ ¾ø´Ù.
-
-
-2.Ãß»óÅ¬·¡½º¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-
-Å¬·¡½º ¾È¿¡ Ãß»ó¸Ş¼Òµå°¡ ÇÑ°³¶óµµÀÖÀ¸¸é Å¬·¡½º¾Õ¿¡ abstract°¡ ºÙ¾î¾ßÇÑ´Ù.
-°´Ã¼»ı¼º ºÒ°¡´ÉÇÏ°í ÂüÁ¶º¯¼ö¼±¾ğÀº °¡´ÉÇÏ´Ù. (ÀÎÅÍÆäÀÌ½º¶û µ¿ÀÏ)
+ì¸í„°í˜ì´ìŠ¤ë§Œ ìˆê³  ë©”ì†Œë“œê°€ ì—†ë‹¤.
 
 
-3.Ãß»óÅ¬·¡½º¿Í ÀÎÅÍÆäÀÌ½ºÀÇ Â÷ÀÌ´Â?
+2.ì¶”ìƒí´ë˜ìŠ¤ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
 
-ÀÎÅÍÆäÀÌ½º : 
-abstract°¡ ºÙ´Â´Ù. (=Ãß»ó ¸Ş¼Òµå°¡ ¿Â´Ù.)
-
-(abstract ´Â? = ÀÚ¼ÕÀÌ ±¸ÇöÇÏ¶ó.)
-
-¸öÃ¼°¡ ¾ø¾î¼­ °´Ã¼»ı¼ºÀÌ ºÒ°¡ÇÏ´Ù. (Printable p = new Printable(); )
-
-but, ÇÔ¼ö ¼±¾ğÀº °¡´ÉÇÏ´Ù. Printable p;
+í´ë˜ìŠ¤ ì•ˆì— ì¶”ìƒë©”ì†Œë“œê°€ í•œê°œë¼ë„ìˆìœ¼ë©´ í´ë˜ìŠ¤ì•ì— abstractê°€ ë¶™ì–´ì•¼í•œë‹¤.
+ê°ì²´ìƒì„± ë¶ˆê°€ëŠ¥í•˜ê³  ì°¸ì¡°ë³€ìˆ˜ì„ ì–¸ì€ ê°€ëŠ¥í•˜ë‹¤. (ì¸í„°í˜ì´ìŠ¤ë‘ ë™ì¼)
 
 
-Ãß»óÅ¬·¡½º :
-Å¬·¡½º¾Õ¿¡ abstractºÙÀ½ = Ãß»óÅ¬·¡½º
+3.ì¶”ìƒí´ë˜ìŠ¤ì™€ ì¸í„°í˜ì´ìŠ¤ì˜ ì°¨ì´ëŠ”?
 
-¡æabstract = ÀÚ¼ÕÀÌ ±¸ÇöÇÑ´Ù.
+ì¸í„°í˜ì´ìŠ¤ : 
+abstractê°€ ë¶™ëŠ”ë‹¤. (=ì¶”ìƒ ë©”ì†Œë“œê°€ ì˜¨ë‹¤.)
 
-¡æÃß»óÅ¬·¡½ºµµ ÀÚ¼ÕÀÌ ±¸ÇöÇÑ´Ù.
+(abstract ëŠ”? = ìì†ì´ êµ¬í˜„í•˜ë¼.)
+
+ëª¸ì²´ê°€ ì—†ì–´ì„œ ê°ì²´ìƒì„±ì´ ë¶ˆê°€í•˜ë‹¤. (Printable p = new Printable(); )
+
+but, í•¨ìˆ˜ ì„ ì–¸ì€ ê°€ëŠ¥í•˜ë‹¤. Printable p;
+
+
+ì¶”ìƒí´ë˜ìŠ¤ :
+í´ë˜ìŠ¤ì•ì— abstractë¶™ìŒ = ì¶”ìƒí´ë˜ìŠ¤
+
+â†’abstract = ìì†ì´ êµ¬í˜„í•œë‹¤.
+
+â†’ì¶”ìƒí´ë˜ìŠ¤ë„ ìì†ì´ êµ¬í˜„í•œë‹¤.
 
  
-4.¿¡·¯¿Í ¿¹¿ÜÀÇ Â÷ÀÌ´Â?
+4.ì—ëŸ¬ì™€ ì˜ˆì™¸ì˜ ì°¨ì´ëŠ”?
 
-¿¡·¯´Â ¹®¹ıÀû ¿À·ù(ÄÄÆÄÀÏ½Ã ¿À·ù)
+ì—ëŸ¬ëŠ” ë¬¸ë²•ì  ì˜¤ë¥˜(ì»´íŒŒì¼ì‹œ ì˜¤ë¥˜)
 
-¿¹¿Ü(exception)´Â °³¹ßÀÚ°¡ ¸øÀâ´Â ¿À·ùÀÌ´Ù. jvm¿¡¼­ ¿¡·¯°¡ ¶ß´Âµ¥ ÀÌ´Â ÄÚµù»óÀÇ ¿¡·¯°¡ ¾Æ´Ñ ½Ã½ºÅÛ»óÀÇ ¿À·ùÀÌ´Ù.(ex. ¸Ş¸ğ¸®°¡ ²ËÃ¡À»¶§, ÇÏµå¿ş¾îÀÇ ¿À·ùÀÏ¶§ µî)
-
-
-
-
-5.unchecked ¿Í checked ¿¹¿ÜÀÇ Â÷ÀÌ´Â?
-
-¿¹¿Ü(exception)¿¡´Â uchecked Exception °ú checked Exception µÎ°¡Áö·Î ³ª´¶´Ù.
-
-Checked ExceptionÀÌ ¹ß»ıÇÒ °¡´É¼ºÀÌ ÀÖ´Â ¸Ş¼Òµå¶ó¸é ¹İµå½Ã ·ÎÁ÷À» try/catch·Î °¨½Î°Å³ª throw·Î ´øÁ®¼­ Ã³¸®ÇØ¾ß ÇÑ´Ù.  ¹İ¸é¿¡ Unchecked ExceptionÀº ¸í½ÃÀûÀÎ ¿¹¿ÜÃ³¸®¸¦ ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+ì˜ˆì™¸(exception)ëŠ” ê°œë°œìê°€ ëª»ì¡ëŠ” ì˜¤ë¥˜ì´ë‹¤. jvmì—ì„œ ì—ëŸ¬ê°€ ëœ¨ëŠ”ë° ì´ëŠ” ì½”ë”©ìƒì˜ ì—ëŸ¬ê°€ ì•„ë‹Œ ì‹œìŠ¤í…œìƒì˜ ì˜¤ë¥˜ì´ë‹¤.(ex. ë©”ëª¨ë¦¬ê°€ ê½‰ì°¼ì„ë•Œ, í•˜ë“œì›¨ì–´ì˜ ì˜¤ë¥˜ì¼ë•Œ ë“±)
 
 
 
 
+5.unchecked ì™€ checked ì˜ˆì™¸ì˜ ì°¨ì´ëŠ”?
 
+ì˜ˆì™¸(exception)ì—ëŠ” uchecked Exception ê³¼ checked Exception ë‘ê°€ì§€ë¡œ ë‚˜ë‰œë‹¤.
 
-6.¿¹¿ÜÃ³¸® UML¸¦ ±×¸®½Ã¿À.
+Checked Exceptionì´ ë°œìƒí•  ê°€ëŠ¥ì„±ì´ ìˆëŠ” ë©”ì†Œë“œë¼ë©´ ë°˜ë“œì‹œ ë¡œì§ì„ try/catchë¡œ ê°ì‹¸ê±°ë‚˜ throwë¡œ ë˜ì ¸ì„œ ì²˜ë¦¬í•´ì•¼ í•œë‹¤.  ë°˜ë©´ì— Unchecked Exceptionì€ ëª…ì‹œì ì¸ ì˜ˆì™¸ì²˜ë¦¬ë¥¼ í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 
 
 
 
 
 
-7.»çÄ¢¿¬»ê °è»ê±â¸¦ ¾Æ·¡ÀÇ Á¶°ÇÀ¸·Î Â¥½Ã¿À. 
--interface ¸¦ È°¿ëÇÒ°Í 
--¿¹¿ÜÃ³¸® ¸ŞÄ¿´ÏÁòÀ» Àû¿ëÇÒ°Í.
+6.ì˜ˆì™¸ì²˜ë¦¬ UMLë¥¼ ê·¸ë¦¬ì‹œì˜¤.
+
+
+
+
+
+
+7.ì‚¬ì¹™ì—°ì‚° ê³„ì‚°ê¸°ë¥¼ ì•„ë˜ì˜ ì¡°ê±´ìœ¼ë¡œ ì§œì‹œì˜¤. 
+-interface ë¥¼ í™œìš©í• ê²ƒ 
+-ì˜ˆì™¸ì²˜ë¦¬ ë©”ì»¤ë‹ˆì¦˜ì„ ì ìš©í• ê²ƒ.
 
 
 
@@ -66,9 +66,9 @@ package java_1215_pre;
 
 import java.util.Scanner;
 
-//»çÄ¢¿¬»ê °è»ê±â¸¦ ¾Æ·¡ÀÇ Á¶°ÇÀ¸·Î Â¥½Ã¿À.
-//-interface ¸¦ È°¿ëÇÒ°Í
-//-¿¹¿ÜÃ³¸® ¸ŞÄ¿´ÏÁòÀ» Àû¿ëÇÒ°Í.
+//ì‚¬ì¹™ì—°ì‚° ê³„ì‚°ê¸°ë¥¼ ì•„ë˜ì˜ ì¡°ê±´ìœ¼ë¡œ ì§œì‹œì˜¤.
+//-interface ë¥¼ í™œìš©í• ê²ƒ
+//-ì˜ˆì™¸ì²˜ë¦¬ ë©”ì»¤ë‹ˆì¦˜ì„ ì ìš©í• ê²ƒ.
 interface ICalcul2 {
 	int add(int x, int y);
 
@@ -113,7 +113,7 @@ class Calculnum implements ICalcul2 {
 
 public class ICalcul {
 	public static void main(String[] args) {
-		System.out.println("µÎ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.");
 		Calculnum cal = new Calculnum();
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
@@ -128,7 +128,7 @@ public class ICalcul {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("°è»ê ³¡");
+		System.out.println("ê³„ì‚° ë");
 	}
 }
 
@@ -136,47 +136,47 @@ public class ICalcul {
 
 
 
-8.´ÙÀ½ Stack ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó¹Ş¾Æ ½Ç¼ö¸¦ ÀúÀåÇÏ´Â StringStack Å¬·¡½º¸¦ ±¸ÇöÇÏ¶ó.(±¸ÇöÇÒ¼ö ÀÖµµ·Ï ÇÒ°Í) [¿Ü¿ì±â]
+8.ë‹¤ìŒ Stack ì¸í„°í˜ì´ìŠ¤ë¥¼ ìƒì†ë°›ì•„ ì‹¤ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” StringStack í´ë˜ìŠ¤ë¥¼ êµ¬í˜„í•˜ë¼.(êµ¬í˜„í• ìˆ˜ ìˆë„ë¡ í• ê²ƒ) [ì™¸ìš°ê¸°]
 
 interface Stack { 
-   int length(); // ÇöÀç ½ºÅÃ¿¡ ÀúÀåµÈ °³¼ö ¸®ÅÏ 
-   int capacity(); // ½ºÅÃÀÇ ÀüÃ¼ ÀúÀå °¡´ÉÇÑ °³¼ö ¸®ÅÏ 
-   String pop(); // ½ºÅÃÀÇ Åé(top)¿¡ ½Ç¼ö ÀúÀå 
-   boolean push(String val); // ½ºÅÃÀÇ Åé(top)¿¡ ÀúÀåµÈ ½Ç¼ö ¸®ÅÏ 
+   int length(); // í˜„ì¬ ìŠ¤íƒì— ì €ì¥ëœ ê°œìˆ˜ ë¦¬í„´ 
+   int capacity(); // ìŠ¤íƒì˜ ì „ì²´ ì €ì¥ ê°€ëŠ¥í•œ ê°œìˆ˜ ë¦¬í„´ 
+   String pop(); // ìŠ¤íƒì˜ í†±(top)ì— ì‹¤ìˆ˜ ì €ì¥ 
+   boolean push(String val); // ìŠ¤íƒì˜ í†±(top)ì— ì €ì¥ëœ ì‹¤ìˆ˜ ë¦¬í„´ 
 } 
-±×¸®°í ´ÙÀ½ ½ÇÇà »ç·Ê¿Í °°ÀÌ ÀÛµ¿ÇÏµµ·Ï StackApp Å¬·¡½º¿¡ main() ¸Ş¼Òµå¸¦ ÀÛ¼ºÇÏ¶ó. 
+ê·¸ë¦¬ê³  ë‹¤ìŒ ì‹¤í–‰ ì‚¬ë¡€ì™€ ê°™ì´ ì‘ë™í•˜ë„ë¡ StackApp í´ë˜ìŠ¤ì— main() ë©”ì†Œë“œë¥¼ ì‘ì„±í•˜ë¼. 
 
-ÃÑ ½ºÅÃ ÀúÀå °ø°£ÀÇ Å©±â ÀÔ·Â >> 3 
-¹®ÀÚ¿­ ÀÔ·Â >> hello 
-¹®ÀÚ¿­ ÀÔ·Â >> sunny 
-¹®ÀÚ¿­ ÀÔ·Â >> smile 
-¹®ÀÚ¿­ ÀÔ·Â >> happy 
-½ºÅÃÀÌ ²Ë Â÷¼­ Çª½Ã ºÒ°¡! 
-¹®ÀÚ¿­ ÀÔ·Â >> ±×¸¸ F
-½ºÅÃ¿¡ ÀúÀåµÈ ¸ğµç ¹®ÀÚ¿­ ÆË : smile sunny hello 
+ì´ ìŠ¤íƒ ì €ì¥ ê³µê°„ì˜ í¬ê¸° ì…ë ¥ >> 3 
+ë¬¸ìì—´ ì…ë ¥ >> hello 
+ë¬¸ìì—´ ì…ë ¥ >> sunny 
+ë¬¸ìì—´ ì…ë ¥ >> smile 
+ë¬¸ìì—´ ì…ë ¥ >> happy 
+ìŠ¤íƒì´ ê½‰ ì°¨ì„œ í‘¸ì‹œ ë¶ˆê°€! 
+ë¬¸ìì—´ ì…ë ¥ >> ê·¸ë§Œ F
+ìŠ¤íƒì— ì €ì¥ëœ ëª¨ë“  ë¬¸ìì—´ íŒ : smile sunny hello 
 
 
 
 
 
 9. 
-Ã¶¼ö ÇĞ»ıÀº ´ÙÀ½ 3°³ÀÇ ÇÊµå¿Í ¸Ş¼Òµå¸¦ °¡Áø 4°³ÀÇ Å¬·¡½º Add, Sub, Mul, Div¸¦ ÀÛ¼ºÇÏ·Á°í ÇÑ´Ù 
+ì² ìˆ˜ í•™ìƒì€ ë‹¤ìŒ 3ê°œì˜ í•„ë“œì™€ ë©”ì†Œë“œë¥¼ ê°€ì§„ 4ê°œì˜ í´ë˜ìŠ¤ Add, Sub, Mul, Divë¥¼ ì‘ì„±í•˜ë ¤ê³  í•œë‹¤ 
 
-- int Å¸ÀÔÀÇ a, b ÇÊµå: 2°³ÀÇ ÇÇ¿¬»êÀÚ 
-- void setValue(int a, int b): ÇÇ¿¬»êÀÚ °ªÀ» °´Ã¼ ³»¿¡ ÀúÀåÇÑ´Ù. 
-- int calculate(): Å¬·¡½ºÀÇ ¸ñÀû¿¡ ¸Â´Â ¿¬»êÀ» ½ÇÇàÇÏ°í °á°ú¸¦ ¸®ÅÏÇÑ´Ù. 
-°õ°õ »ı°¢ÇØº¸´Ï, Add, Sub, Mul, Div Å¬·¡½º¿¡ °øÅëµÈ ÇÊµå¿Í ¸Ş¼Òµå°¡ Á¸ÀçÇÏ¹Ç·Î »õ·Î¿î Ãß»ó Å¬·¡½º Calc¸¦ ÀÛ¼ºÇÏ°í Calc¸¦ »ó¼Ó¹Ş¾Æ ¸¸µé¸é µÇ°Ú´Ù°í »ı°¢Çß´Ù. ±×¸®°í main() ¸Ş¼Òµå¿¡¼­ ´ÙÀ½ ½ÇÇà »ç·Ê¿Í °°ÀÌ 2°³ÀÇ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·Â¹ŞÀº ÈÄ, Add, Sub, Mul, Div Áß¿¡¼­ ÀÌ ¿¬»êÀ» Ã³¸®ÇÒ ¼ö ÀÖ´Â °´Ã¼¸¦ »ı¼ºÇÏ°í setValue() ¿Í calculate()¸¦ È£ÃâÇÏ¿© ±× °á°ú °ªÀ» È­¸é¿¡ Ãâ·ÂÇÏ¸é µÈ´Ù°í »ı°¢ÇÏ¿´´Ù. Ã¶¼öÃ³·³ ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¶ó. 
+- int íƒ€ì…ì˜ a, b í•„ë“œ: 2ê°œì˜ í”¼ì—°ì‚°ì 
+- void setValue(int a, int b): í”¼ì—°ì‚°ì ê°’ì„ ê°ì²´ ë‚´ì— ì €ì¥í•œë‹¤. 
+- int calculate(): í´ë˜ìŠ¤ì˜ ëª©ì ì— ë§ëŠ” ì—°ì‚°ì„ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ë¦¬í„´í•œë‹¤. 
+ê³°ê³° ìƒê°í•´ë³´ë‹ˆ, Add, Sub, Mul, Div í´ë˜ìŠ¤ì— ê³µí†µëœ í•„ë“œì™€ ë©”ì†Œë“œê°€ ì¡´ì¬í•˜ë¯€ë¡œ ìƒˆë¡œìš´ ì¶”ìƒ í´ë˜ìŠ¤ Calcë¥¼ ì‘ì„±í•˜ê³  Calcë¥¼ ìƒì†ë°›ì•„ ë§Œë“¤ë©´ ë˜ê² ë‹¤ê³  ìƒê°í–ˆë‹¤. ê·¸ë¦¬ê³  main() ë©”ì†Œë“œì—ì„œ ë‹¤ìŒ ì‹¤í–‰ ì‚¬ë¡€ì™€ ê°™ì´ 2ê°œì˜ ì •ìˆ˜ì™€ ì—°ì‚°ìë¥¼ ì…ë ¥ë°›ì€ í›„, Add, Sub, Mul, Div ì¤‘ì—ì„œ ì´ ì—°ì‚°ì„ ì²˜ë¦¬í•  ìˆ˜ ìˆëŠ” ê°ì²´ë¥¼ ìƒì„±í•˜ê³  setValue() ì™€ calculate()ë¥¼ í˜¸ì¶œí•˜ì—¬ ê·¸ ê²°ê³¼ ê°’ì„ í™”ë©´ì— ì¶œë ¥í•˜ë©´ ëœë‹¤ê³  ìƒê°í•˜ì˜€ë‹¤. ì² ìˆ˜ì²˜ëŸ¼ í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ë¼. 
 
-µÎ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À >> 5 7 + 
+ë‘ ì •ìˆ˜ì™€ ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >> 5 7 + 
 -
 
-package java_1215_pre;
+package java_1215;
 
 import java.util.Scanner;
 
-//»çÄ¢¿¬»ê °è»ê±â¸¦ ¾Æ·¡ÀÇ Á¶°ÇÀ¸·Î Â¥½Ã¿À.
-//-interface ¸¦ È°¿ëÇÒ°Í
-//-¿¹¿ÜÃ³¸® ¸ŞÄ¿´ÏÁòÀ» Àû¿ëÇÒ°Í.
+//ì‚¬ì¹™ì—°ì‚° ê³„ì‚°ê¸°ë¥¼ ì•„ë˜ì˜ ì¡°ê±´ìœ¼ë¡œ ì§œì‹œì˜¤.
+//-interface ë¥¼ í™œìš©í• ê²ƒ
+//-ì˜ˆì™¸ì²˜ë¦¬ ë©”ì»¤ë‹ˆì¦˜ì„ ì ìš©í• ê²ƒ.
 interface Calc {
 	int add(int a, int b);
 
@@ -188,15 +188,18 @@ interface Calc {
 }
 
 class Calclass implements Calc {
-	char oper = 0;
-	int num1 = 0, num2 = 0;
-	int result = 0;
+	private int i;
+	private int j;
+	private char oper;
 
-	void setValue(int i, int j) {// ÇÇ¿¬»êÀÚ °ªÀ» °´Ã¼ ³»¿¡ ÀúÀåÇÑ´Ù.
-//????
+	void setValue(int i, int j) {// í”¼ì—°ì‚°ì ê°’ì„ ê°ì²´ ë‚´ì— ì €ì¥í•œë‹¤.
+		this.i = i;
+		this.j = j;
 	}
 
-	public Calclass(int i, int j, char oper) {// Å¬·¡½ºÀÇ ¸ñÀû¿¡ ¸Â´Â ¿¬»êÀ» ½ÇÇàÇÏ°í °á°ú¸¦ ¸®ÅÏÇÑ´Ù.
+	public Calclass(int i, int j,char oper) {// í´ë˜ìŠ¤ì˜ ëª©ì ì— ë§ëŠ” ì—°ì‚°ì„ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ë¦¬í„´í•œë‹¤.
+
+		int result = 0;
 
 		switch (oper) {
 		case '+': {
@@ -219,7 +222,7 @@ class Calclass implements Calc {
 		System.out.println(result);
 	}
 
-	public void cal(int x, int y) {
+	public void cal(int i, int j) {
 
 	}
 
@@ -249,10 +252,10 @@ class Calclass implements Calc {
 
 }
 
-public class Chulsoo {
+public class TestMain {
 	public static void main(String[] args) {
 
-		System.out.println("µÎ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("ë‘ ì •ìˆ˜ì™€ ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤.");
 		Scanner sc = new Scanner(System.in);
 		int i = sc.nextInt();
 		int j = sc.nextInt();
@@ -268,11 +271,11 @@ public class Chulsoo {
 
 
 
-13.¿¬½À¹®Á¦ 7-22 ¹øÀ» Çª½Ã¿À.
+13.ì—°ìŠµë¬¸ì œ 7-22 ë²ˆì„ í‘¸ì‹œì˜¤.
 
 
 
-package javajungsuk;
+package java_1215;
 
 abstract class Shape {
 	Point p;
@@ -285,7 +288,7 @@ abstract class Shape {
 		this.p = p;
 	}
 
-	abstract double calcArea(); //µµÇüÀÇ ¸éÀûÀ» °è»êÇØ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
+	abstract double calcArea(); // ë„í˜•ì˜ ë©´ì ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 
 	Point getPosition() {
 		return p;
@@ -310,52 +313,59 @@ class Point {
 	}
 
 	public String toString() {
-		
+
 		return "[" + x + "," + y + "]";
 	}
 }
 
 ////////////////////////////
-class Circle extends Shape{
+class Circle extends Shape {
 	private double r;
-	public Circle(Point p, double r){
+
+	public Circle(Point p, double r) {
 		super(p);
 		this.r = r;
 	}
-	@Override
-	double calcArea() {//µµÇüÀÇ ¸éÀûÀ» °è»êÇØ¼­ ¹İÈ¯
-		
-		return r*r*Math.PI;
+
+	public Circle(double r) {
+		this.r = r;
 	}
-	
+
+	@Override
+	double calcArea() {// ë„í˜•ì˜ ë©´ì ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜
+
+		return r * r * Math.PI;
+	}
+
 }
 
-class Rectangle extends Shape{
-	 
-	private double width, heigh; //¸â¹öº¯¼ö(Àü¿ªº¯¼ö)
+class Rectangle extends Shape {
+
+	private double width, heigh; // ë©¤ë²„ë³€ìˆ˜(ì „ì—­ë³€ìˆ˜)
+
 	public Rectangle(Point p, double width, double heigh) {
 		super(p);
 		this.width = width;
 		this.heigh = heigh;
-		
 	}
 
-	
-	
+	public Rectangle(double width, double heigh) {
+		this.width = width;
+		this.heigh = heigh;
+	}
+
 	public boolean isSquare() {
-		if(width==heigh);
-		//0ÀÏ¶§µµ °É·¯ÁÖ±â
-		return false;
+		if (width == heigh)
+			;
+		// 0ì¼ë•Œë„ ê±¸ëŸ¬ì£¼ê¸°
+		return true;
 	}
-
-
 
 	@Override
-	double calcArea() {//µµÇüÀÇ ¸éÀûÀ» °è»êÇØ¼­ ¹İÈ¯
-		
-		return width*heigh;
-	}
+	double calcArea() {// ë„í˜•ì˜ ë©´ì ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜
 
+		return width * heigh;
+	}
 
 }
 
@@ -363,27 +373,24 @@ class Rectangle extends Shape{
 
 
 
+14.ì—°ìŠµë¬¸ì œ 7-23 ë²ˆì„ í‘¸ì‹œì˜¤.
 
 
-
-14.¿¬½À¹®Á¦ 7-23 ¹øÀ» Çª½Ã¿À.
-
-package javajungsuk;
 
 public class ShapeMain2 {
 	public static void main(String[] args) {
-		Shape[] arr = { new Circle(null, 5.0), 
-				new Rectangle(null, 3, 4), 
-				new Circle(null, 1) };
-				
-		System.out.println("¸éÀûÀÇ ÇÕ:" + sumArea(arr));
+		Shape[] arr = { new Circle(5.0), new Rectangle(3, 4), new Circle(1) };
+
+		System.out.println("ë©´ì ì˜ í•©:" + sumArea(arr));
 	}
 
-	private static String sumArea(Shape[] arr) {
-	
-		double sum =0;
-		for(int i = 0; i<arr.length; i++)
-				sum += (double)arr[i]+sum;
-			
-		}
+	private static double sumArea(Shape[] arr) {
+
+		double sum = 0;
+		for (int i = 0; i < arr.length; i++)
+			sum += arr[i].calcArea();
+
+		return sum;
+
 	}
+}
