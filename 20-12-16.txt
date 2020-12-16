@@ -156,36 +156,36 @@ class Pear extends Fruit {
 
 
 
-6. 다음 조건을 만족하도록 클래스 Person과 Student를 작성하시오. 
-- 클래스 Person 
-* 필드 : 이름, 나이, 주소 선언 
-- 클래스 Student 
-* 필드 : 학교명, 학과, 학번, 8개 평균평점을 저장할 배열로 선언 
-* 생성자 : 학교명, 학과, 학번 지정 
-* 메소드 average() : 8개 학기 평균평점의 평균을 반환 
-- 클레스 Person과 Student 프로그램 테스트 프로그램의 결과 : 8개 학기의 평균평점은 표준입력으로 받도록한다. 
-이름 : 김다정 
-나이 : 20 
+6. 다음 조건을 만족하도록 클래스 Person과 Student를 작성하시오.
+- 클래스 Person
+* 필드 : 이름, 나이, 주소 선언
+- 클래스 Student
+* 필드 : 학교명, 학과, 학번, 8개 평균평점을 저장할 배열로 선언
+* 생성자 : 학교명, 학과, 학번 지정
+* 메소드 average() : 8개 학기 평균평점의 평균을 반환
+- 클레스 Person과 Student 프로그램 테스트 프로그램의 결과 : 8개 학기의 평균평점은 표준입력으로 받도록한다.
+이름 : 김다정
+나이 : 20
 
-주소 : 서울시 관악구 
-학교 : 동양서울대학교 
-학과 : 전산정보학과 
-학번 : 20132222 
+주소 : 서울시 관악구
+학교 : 동양서울대학교
+학과 : 전산정보학과
+학번 : 20132222
 
----------------------------------------- 
+----------------------------------------
 
-8학기 학점을 순서대로 입력하세요 
+8학기 학점을 순서대로 입력하세요
 
-1학기 학점  → 3.37 
-2학기 학점  → 3.89 
-3학기 학점  → 4.35 
-4학기 학점  → 3.76 
-5학기 학점  → 3.89 
-6학기 학점  → 4.26 
-7학기 학점  → 4.89 
-8학기 학점  → 3.89  
+1학기 학점  → 3.37
+2학기 학점  → 3.89
+3학기 학점  → 4.35
+4학기 학점  → 3.76
+5학기 학점  → 3.89
+6학기 학점  → 4.26
+7학기 학점  → 4.89
+8학기 학점  → 3.89 
 
----------------------------------------- 
+----------------------------------------
 
 8학기 총 평균 평점은 4.0375점입니다.
 
@@ -224,9 +224,9 @@ import java.util.Scanner;
 //8학기 총 평균 평점은 4.0375점입니다. 
 
 class Person {
-	private String name = "정다정";
-	private int age = 20;
-	private String address = "서울시 관악구";
+	protected String name;
+	protected int age;
+	protected String address;
 
 	public Person(String name, int age, String address) {
 		this.name = name;
@@ -234,32 +234,30 @@ class Person {
 		this.address = address;
 	}
 
-	public void print() {
-		System.out.println("이름 : "+name +"\n나이 : "+age+"\n주소 : "+address);
-	}
-
+	
 }
 
-class Student {
-	private String school, depart, id;
+class Student extends Person {
+	private String school, depart;
+	int id;
+	private double Arr[];
 
-//	
-//	Student arr[] = new Student[4];
-//	for(int i= 0; i<Student.length; i++) {
-//		arr[i] = new Student();
-//	}
-	// Student arr[]= new Student[4];
-	Student() {
-		this("학교 : 동양서울대학교", "학과 : 전산정보학과", "학번 : 20132222");
-	}
+	Student(String name, int age, String address, String school, String depart, int id) {
+		super(name, age, address);
 
-	Student(String school, String depart, String id) {
 		this.school = school;
 		this.depart = depart;
 		this.id = id;
+
 	}
 
-	void average() {
+	public void print() {
+		System.out.println("이름 : " + name + "\n나이 : " + age + "\n주소 : " + address + "학교는 : " + school + "학과는 : "
+				+ depart + "학번은 : " + id);
+	}
+	
+	private static double average(Arr[] num) {
+
 		System.out.println("8학기 학점을 순서대로 입력하세요 ");
 		Scanner sc = new Scanner(System.in);
 		double scr = sc.nextInt();
@@ -271,22 +269,24 @@ class Student {
 		}
 
 		double sum = 0;
-		for (i = 0; i < num.length; i++)
+		for (i = 1; i < num.length + 1; i++)
 			sum += num[i];
 
-		//return num + "학기 총 평균 평점은 " + sum / i + "점입니다.";
+		System.out.println(num + "학기 총 평균 평점은 " + sum / i + "점입니다.");
+
 	}
+
 }
 
 public class ScoreMain {
 	public static void main(String[] args) {
+		Student st = new Student("김다정", 20, "서울시 관악구", "동양서울대학교", "전산정보학과", 20132222);
 
-		Person ps = new Person("김다정", 20, "서울시 관악구");
-		ps.print();
-		Student st = new Student();
+		
+		st.average();
 
-		st.averge();
 	}
+
 }
 
 
