@@ -56,7 +56,7 @@ rescources = 객체. 하나의 메모리
 
 원래는 try-catch문에서 try뒤에 아무것도 쓰지 않는데
 
-try뒤에 가로를 넣어서 객체 생성해주면
+try뒤에 괄호를 넣어서 객체 생성해주면
 
 굳이 close를 쓰지않아도 try-catch문이 알아서 종료해준다.
 
@@ -199,9 +199,9 @@ class Pear extends Fruit {
 
 
 package java_1216_;
-
+ 
 import java.util.Scanner;
-
+ 
 //- 클레스 Person과 Student 프로그램 테스트 프로그램의 결과 : 8개 학기의 평균평점은 표준입력으로 받도록한다. 
 //이름 : 김다정 
 //나이 : 20 
@@ -227,71 +227,71 @@ import java.util.Scanner;
 //---------------------------------------- 
 //
 //8학기 총 평균 평점은 4.0375점입니다. 
-
+ 
 class Person {
 	protected String name;
 	protected int age;
 	protected String address;
-
+ 
 	public Person(String name, int age, String address) {
 		this.name = name;
 		this.age = age;
 		this.address = address;
 	}
-
+ 
 	
 }
-
+ 
 class Student extends Person {
 	private String school, depart;
 	int id;
 	private double Arr[];
-
+ 
 	Student(String name, int age, String address, String school, String depart, int id) {
 		super(name, age, address);
-
+ 
 		this.school = school;
 		this.depart = depart;
 		this.id = id;
-
+ 
 	}
-
+ 
 	public void print() {
 		System.out.println("이름 : " + name + "\n나이 : " + age + "\n주소 : " + address + "학교는 : " + school + "학과는 : "
 				+ depart + "학번은 : " + id);
 	}
 	
 	private static double average(Arr[] num) {
-
+ 
 		System.out.println("8학기 학점을 순서대로 입력하세요 ");
 		Scanner sc = new Scanner(System.in);
 		double scr = sc.nextInt();
 		int i;
 		int[] num = new int[8];
 		for (i = 1; i < num.length + 1; i++) {
-
+ 
 			System.out.println(i + "번째 학점>>" + scr);
 		}
-
+ 
 		double sum = 0;
 		for (i = 1; i < num.length + 1; i++)
 			sum += num[i];
-
+ 
 		System.out.println(num + "학기 총 평균 평점은 " + sum / i + "점입니다.");
-
+ 
 	}
-
+ 
 }
-
+ 
 public class ScoreMain {
 	public static void main(String[] args) {
 		Student st = new Student("김다정", 20, "서울시 관악구", "동양서울대학교", "전산정보학과", 20132222);
-
+ 
 		
 		st.average();
-
+ 
 	}
-
+ 
 }
 
 
