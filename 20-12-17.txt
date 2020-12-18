@@ -26,6 +26,7 @@ https://github.com/ktkt13134/interview/blob/main/README.md
 
 
 
+
 4.다음 main()이 실행되면 아래 예시와 같이 출력되도록 MyPoint 클래스를 작성하라.
 
 public static void main(String [] args) {
@@ -56,6 +57,15 @@ class MyPoint {
 	public String toString() {
 		return "Point(" + x + "," + y + ")";
 	}
+}
+
+@Override
+	public boolean equals(Object obj){
+		if((this.x)obj).x) && ((this.y)obj).y){
+				return true;
+		} else {
+				return false;
+		}
 }
 
 public class PointMain {
@@ -169,6 +179,23 @@ public class LoveMain {
 			}
 			System.out.println();
 		}
+	}
+}
+
+
+다른 정석풀이
+
+import java.util.Scanner;
+public class arrayClass {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		for (int i = 1; i <= str.length(); i++) {
+			System.out.print(str.substring(i));
+			System.out.println(str.substring(0, i));
+		}
+		sc.close();
 	}
 }
 
@@ -297,3 +324,51 @@ public class PersonMain {
 이 달의 4번째 주입니다. 
 이 해의 169일입니다. 
 이 해의 25번째 주입니다. 
+
+
+
+package java_1218;
+
+import java.util.Calendar;
+
+public class copyOfclass {
+	public static void main(String[] args) {
+
+		Calendar cal = Calendar.getInstance();
+		// ↑getInstance는 싱글톤(Singleton Pattern)이다. 객체를 딱! 하나만 생성가능.
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH) + 1;
+		int date = cal.get(Calendar.DATE);
+		
+		String d = null;
+		
+		switch (cal.get(Calendar.DAY_OF_WEEK)) {
+		case 1:
+			d = "일";
+			break;
+		case 2:
+			d = "월";
+			break;
+		case 3:
+			d = "화";
+			break;
+		case 4:
+			d = "수";
+			break;
+		case 5:
+			d = "목";
+			break;
+		case 6:
+			d = "금";
+			break;
+		case 7:
+			d = "토";
+			break;
+		}
+
+		System.out.println(year + "" + month + "" + date + "" + d);
+
+	}
+
+}
