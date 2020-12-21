@@ -259,7 +259,7 @@ class Result {
 
 
 
-7.제넥릭이란?
+6.제넥릭이란?
 
 프로그래머가 코딩할때 생기는 오류를 최소화 시켜주는 것이다.
 
@@ -273,7 +273,7 @@ object는 참조형타입이기 때문에 T는 참조형타입을 대체할 수 
 
 
 
-8. 아래를 프로그래밍 하시오.
+7. 아래를 프로그래밍 하시오.
 
 Rectangle r1 = new Rectangle(5,6);
 Rectangle r2 = new Rectangle(7,9);
@@ -284,7 +284,12 @@ System.out.println(r3.getHeight() + " : " + r3.getWidth()  + "입니다.");
 
 =============================
 출력 : 9 : 7 입니다.
-9. 아래를 프로그래밍 하시오.
+
+
+
+
+
+8. 아래를 프로그래밍 하시오.(중요)
  - Rectangle 배열 4개를 만든후 스캐너 객체로 가로와 세로를 입력하여 4개의 객체를 배열에 할당한다 
 -  getSortingRec 사각형 배열을 내림차순 정렬한다.
 -정렬이 제대로 되었는지 배열에 저장된 객체의 getArea()함수를 순서대로 호출한다.
@@ -293,3 +298,88 @@ Rectangle[] rec = new Rectangle[3];
 ........
 Rectangle[] recSorting = Rectangle.getSortingRec(rec) 
 ......
+
+package java_money;
+
+class Rectangle implements Comparable{
+    private int width;
+    private int heigth;
+    
+    public Rectangle(int width, int heigth) {
+        this.width = width;
+        this.heigth = heigth;
+    }
+    
+    public int getArea() {       
+       return width * heigth;
+    }
+   
+    @Override
+   public int compareTo(Object o) {      
+      //return this.getArea() - ((Rectangle)o).getArea();
+      return ((Rectangle)o).getArea() - this.getArea()  ;
+   }   
+}
+
+class RecArrays {
+   
+   public static Rectangle[] sort(Object[] arrRecs) {
+      Rectangle[] recs = (Rectangle[])arrRecs;
+      Rectangle temp = null;
+      
+      if(recs instanceof Comparable[]) {
+         
+         for(int i = 0 ; i < recs.length ; i++) {
+            for(int j = 0 ; j < recs.length -i -1 ; j ++) {
+               
+               if(recs[j].compareTo(recs[j+1]) > 0) {
+                       temp = recs[j];
+                       recs[j] = recs[j + 1];
+                       recs[j + 1] = temp;
+               }            
+            }
+         }
+         
+         
+      }else {
+         
+         for(int i = 0 ; i < recs.length ; i++) {
+            for(int j = 0 ; j < recs.length -i -1 ; j ++) {
+               if(recs[j].getArea() > recs[j+1].getArea()) {
+                       temp = recs[j];
+                       recs[j] = recs[j + 1];
+                       recs[j + 1] = temp;
+               }
+            }
+         }
+         
+      }
+      
+      
+      return recs;
+   }
+}
+
+
+
+public class Money {
+
+   public static void main(String[] args) {
+        
+      Rectangle[] recArr = {new Rectangle(6, 6),new Rectangle(5, 5),new Rectangle(10, 10),new Rectangle(12, 12),new Rectangle(11, 11)};
+      
+      RecArrays.sort(recArr);
+      
+      //Arrays.sort(recArr);
+      
+      System.out.println(recArr.toString());
+      
+      for ( Rectangle rec: recArr) {
+         System.out.println(rec.getArea());
+      }
+      
+      
+      
+   }
+
+}
