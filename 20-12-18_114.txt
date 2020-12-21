@@ -15,7 +15,7 @@ BigInteger는 문자열이기 때문에 사칙연산이 안돼서 형변환을 �
       ar1[0] = new INum(1); ar2[0] = new INum(1);
       ar1[1] = new INum(2); ar2[1] = new INum(2);
       ar1[2] = new INum(3); ar2[2] = new INum(3);
-      System.out.println(Arrays.equals(ar1, ar2));
+      System.out.printl(Arrays.equals(ar1, ar2));
 package java_1218;
 
 import java.util.Arrays;
