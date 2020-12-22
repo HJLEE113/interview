@@ -155,7 +155,53 @@ class Box<T> {
 //99 & 55
 99 & 55
  
+ 
+ 
+ //선생님 
+package java_1222;
 
+public class NumMain {
+
+	public static void main(String[] args) {
+		Box<Integer> box1 = new Box<>();
+		box1.set(99);
+
+		Box<Integer> box2 = new Box<>();
+		box2.set(55);
+
+		System.out.println(box1.get() + " & " + box2.get());
+		swapBox(box1, box2);
+		/*
+		 * 원래는 int a = 1; int b = 2; temp = a; a = b; b = temp; 이렇게 바꿈 - 이걸 구현
+		 */
+		System.out.println(box1.get() + " & " + box2.get());
+	}
+
+	private static <T> void swapBox(Box<T> box1, Box<T> box2) {
+//		int temp = box1.get();
+//		box1.set(box1.get());
+//		box1.set(temp);
+
+		T temp = box1.get();
+		box1.set(box2.get());
+		box2.set(temp);
+	}
+}
+
+class Box<T> {
+	private T obj;
+
+	public void set(T obj) {
+		this.obj = obj;
+
+	}
+
+	public T get() {
+
+		return obj;
+	}
+
+}
  
 
 4. 지네릭 메소드에 대하여 설명하시오.
