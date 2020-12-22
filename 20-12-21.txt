@@ -278,4 +278,5 @@ public class PolyMolyMain {
 
 
 9. 콜렉션 프레임워크란?
+Set List Queue Map 셀리큐맵!
 : 자료구조, 알고리즘을 구현해놓은 일종의 라이브러리이다.
