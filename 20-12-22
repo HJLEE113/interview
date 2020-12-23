@@ -148,6 +148,8 @@ LA 34 -118
 ====출력
 인스턴스 수: 2
 7799	9955
+
+
 package java_1222;
 
 import java.util.HashSet;
@@ -221,6 +223,8 @@ class Num{
 ============
 저장된 데이터 수: 2
 [LEE(10세), PARK(35세)]
+
+
 package java_1222;
 
 import java.util.HashSet;
@@ -255,16 +259,18 @@ class Person{
 	
 	@Override
 	public int hashCode() {
-		return age%2;
+		//return age%2;
+		return age / 10; //10대, 20대, 30, 별로 나누기 위해 10을 나누어 분류함
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(age == ((Person)obj).age)
+		//if(age == ((Person)obj).age) - name도 비교해주기
+		if((age == ((Person)obj).age) && (this.name).equals(((Person)obj).name))
+		//문자열은 ==쓰면 안되고 equals로 써야한다. 
 			return true;
 		else
 			return false;
 	}
 }//저장된 데이터 수: 2
 //[LEE(10세), PARK(35세)]
-ㅏ
