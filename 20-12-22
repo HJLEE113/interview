@@ -23,9 +23,6 @@ LinkedList 는 검색은 느리다.(단점)
 가장 큰 수는 88
 
 
-
-//오류 - 엔터로밖에 구현이 안됨.....
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
